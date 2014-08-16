@@ -1,0 +1,24 @@
+{
+    "name": "mickgeek/yii2-daslider",
+    "type": "yii2-extension",
+    "description": "Content slider with delayed animations and background parallax effect.",
+    "keywords": ["yii2", "extension", "widget", "slider", "parallax"],
+    "homepage": "https://github.com/mickgeek/yii2-daslider",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+            "name": "Oleg Belostotskiy",
+            "email": "olgblst@gmail.com",
+            "homepage": "http://mickgeek.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "mickgeek\\daslider\\": ""
+        }
+    }
+}
