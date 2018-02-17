@@ -13,7 +13,7 @@ Installation
 You can install the widget using [Composer]. Just run the following command under your application folder:
 
 ```
-php composer.phar require mickgeek/yii2-daslider
+php composer.phar require --prefer-dist mickgeek/yii2-daslider
 ```
 
 Usage
