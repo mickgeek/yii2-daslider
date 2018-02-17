@@ -7,7 +7,7 @@ use yii\web\View;
 /**
  * DaSliderAsset represents a collection of asset files, such as CSS, JS, images.
  *
- * @author Oleg Belostotskiy <olgblst@gmail.com>
+ * @author Oleg Belostotsky <olegbelostotsky@gmail.com>
  */
 class DaSliderAsset extends AssetBundle
 {
@@ -38,7 +38,7 @@ class DaSliderAsset extends AssetBundle
 /**
  * This asset bundle provides the [Modernizr JavaScript library](http://modernizr.com).
  *
- * @author Oleg Belostotskiy <olgblst@gmail.com>
+ * @author Oleg Belostotsky <olegbelostotsky@gmail.com>
  */
 class ModernizrAsset extends AssetBundle
 {

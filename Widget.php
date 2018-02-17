@@ -9,7 +9,7 @@ use yii\helpers\Json;
  * \mickgeek\daslider\Widget is a simple parallax content slider with different animations
  * for each slider element and a background parallax effect.
  *
- * @author Oleg Belostotskiy <olgblst@gmail.com>
+ * @author Oleg Belostotsky <olegbelostotsky@gmail.com>
  */
 class Widget extends \yii\base\Widget
 {
@@ -23,12 +23,12 @@ class Widget extends \yii\base\Widget
      */
     public $options = ['class' => 'da-slider'];
     /**
-     * @var array the options for the widget. Possible options:
+     * @var array options for the widget. The possible options:
      *
-     * - current: integer, a number of current slide.
-     * - bgincrement: integer, an increment the background position (parallax effect) when sliding.
-     * - autoplay: boolean, whether to display the slideshow.
-     * - interval: integer, a time between transitions.
+     * - `current`: integer, a number of the current slide.
+     * - `bgincrement`: integer, an increment of the background position when sliding (the parallax effect).
+     * - `autoplay`: boolean, whether to display the slideshow.
+     * - `interval`: integer, a duration between the transitions.
      */
     public $clientOptions = [];
 

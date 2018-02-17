@@ -1,7 +1,7 @@
-DA Slider
-=========
+Delayed Animation Slider
+========================
 
-DA Slider is a simple parallax content slider for the Yii 2 framework with different animations for each slider element and a background parallax effect.
+Delayed Animation Slider is a simple content slider for the Yii 2 framework with animations for each slider element and the background parallax effect.
 
 ![Screenshot](https://cloud.githubusercontent.com/assets/8091481/3921610/fd69a838-23c2-11e4-8eb1-643db669bd03.gif)
 
@@ -10,47 +10,11 @@ DA Slider is a simple parallax content slider for the Yii 2 framework with diffe
 Installation
 ------------
 
-You can install the widget in two ways, using [Composer] or by downloading an archive file.
-
-### Installing via Composer
-
-Run the following commands under your application folder:
+You can install the widget using [Composer]. Just run the following command under your application folder:
 
 ```
-php composer.phar require --prefer-dist "mickgeek/yii2-daslider *"
+php composer.phar require mickgeek/yii2-daslider
 ```
-
-> Note: You can just do `composer update --prefer-dist` if pre-adding the following to `require` section of your `composer.json`:
->
->     "mickgeek/yii2-daslider": "*"
->
-
-### Installing from an Archive File
-
-Download the [archive file], unpack it to `path/to/app/vendor/mickgeek` folder and modify the main configuration file like this:
-
-```php
-$vendorDir = dirname(__DIR__) . '/vendor';
-
-return [
-    'vendorPath' => $vendorDir,
-    'extensions' => array_merge(
-        require($vendorDir . '/yiisoft/extensions.php'),
-        [
-            'mickgeek/yii2-daslider' => [
-                'name' => 'mickgeek/yii2-daslider',
-                'version' => '9999999-dev',
-                'alias' => [
-                    '@mickgeek/daslider' => $vendorDir . '/mickgeek/yii2-daslider',
-                ],
-            ],
-        ]
-    ),
-    ...
-];
-```
-
-where `$vendorDir` is the path to the directory that stores vendor files.
 
 Usage
 -----
@@ -90,11 +54,11 @@ Widget Properties
 
   - `options`: *array*, the HTML attributes for the widget container tag. See [renderTagAttributes()] for details on how attributes are being rendered.
 
-  - `clientOptions`: *array*, the options for the widget. Possible options:
-    - current: integer, a number of current slide.
-    - bgincrement: integer, an increment the background position (parallax effect) when sliding.
-    - autoplay: boolean, whether to display the slideshow.
-    - interval: integer, a time between transitions.
+  - `clientOptions`: *array*, options for the widget. The possible options:
+    - `current`: integer, a number of the current slide.
+    - `bgincrement`: integer, an increment of the background position when sliding (the parallax effect).
+    - `autoplay`: boolean, whether to display the slideshow.
+    - `interval`: integer, a duration between the transitions.
 
 License
 -------
@@ -103,6 +67,5 @@ This extension is released under the BSD 3-Clause License. See the bundled `LICE
 
 [Real Demo]:http://tympanus.net/Development/ParallaxContentSlider/index2.html
 [Composer]:https://getcomposer.org
-[archive file]:https://github.com/mickgeek/yii2-daslider/archive/master.zip
 [Modernizr JavaScript library]:http://modernizr.com
 [renderTagAttributes()]:http://www.yiiframework.com/doc-2.0/yii-helpers-basehtml.html#renderTagAttributes()-detail
